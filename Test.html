@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICT BOOTCamp</title>
+  <style>
+    /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+  background-color: #f0f8ff;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.navbar .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar .hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+.nav-links li a:hover {
+  background-color: #2196f3;
+  border-radius: 5px;
+}
+
+/* Section Style */
+.section {
+  padding: 100px 20px 60px 20px;
+  margin-top: 40px;
+  background-color: white;
+  border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+/* Gallery Section */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .navbar .hamburger {
+    display: block;
+  }
+}
+
+  .btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #0056b3;
+}
+body {
+      font-family: Arial;
+      padding: 20px;
+    }
+   
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .footer {
+  background-color: #71239e;
+  color: #fff;
+  padding: 30px 20px;
+  text-align: left;
+}
+
+.footer h3 {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin: 8px 0;
+}
+
+.footer ul li a {
+  color: hsl(250, 25%, 95%);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer ul li a:hover {
+  color: #d8d4e8;
+  text-decoration: underline;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.Name{
+    font-size:xx-large;
+    color: rgb(200, 32, 138);
+    font-style: normal;
+    font-weight: bold;
+    gap:inherit;
+}
+.Address{
+    font-size:xx-large;
+    color: rgb(200, 32, 138);
+    font-style: normal;
+    font-weight: bold;
+    gap:inherit;
+}
+.Name, .Address {
+      margin: 0;       /* removes space outside the element */
+      padding: 0;      /* removes space inside the element */
+      line-height: 1.5  /* tight line spacing */
+    }
+.navbar {
+    background-color: #004466;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+.right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+        
+    }
+.language-toggle{
+  position: absolute;
+        right: 34px;
+        top: 80px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.searchbar {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.searchbar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.searchbar button {
+    padding: 6px 10px;
+    background-color: #006699;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header {
+    background: #e0f7fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #004466;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    color: #004466;
+    margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+<header class="Name">ICT BOOTCamp</header>
+    <header class="Address">Web Development and Cybersecurity</header>
+<!--<header class="header"-->
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="download.jpg" alt=""> 
+        </div>
+                <!-- Right box for buttons -->
+        <div class="right">
+  <a href="tel:+9779827112810">
+    <button class="btn">Call Us Now</button>
+  </a>
+  <a href="Email:kunwarbabukamal10@gmail.com">
+    <button class="btn">Email Us</button>
+  </a>
+</div>
+    </header
+  <!-- Language Switch -->
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('np')">नेपाली</button>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul class="nav-links">
+      <li><a href="#home" data-key="home">गृहपृष्ठ</a></li>
+      <li><a href="#about" data-key="about">हाम्रो बारेमा</a></li>
+      <li><a href="#activities" data-key="activities">गतिविधिहरू</a></li>
+      <li><a href="#notice" data-key="notice">सूचना</a></li>
+      <li><a href="#info" data-key="info">जानकारी</a></li>
+      <li><a href="#gallery" data-key="gallery">ग्यालरी</a></li>
+    </ul>
+    <input type="text" id="search" data-placeholder="search" placeholder="खोज्नुहोस्." />
+  </nav>
+
+  <!-- Sections -->
+  <section id="home">
+    <h2 data-key="home_title">गृहपृष्ठ</h2>
+    <p data-key="home_text">
+      𝙒𝙚𝙗 𝘿𝙚𝙫 & Cybersecurity ICT Bootcamp<br>
+      गण्डकी प्रदेश सरकार, सामाजिक विकास मन्त्रालय, पोखरा<br>
+      अवधि: १० दिन (६ घण्टा प्रतिदिन)<br>
+      उद्देश्य: वेबसाइट निर्माण र साइबर सुरक्षा सिक्ने
+    </p>
+  </section>
+
+  <section id="activities">
+    <h2 data-key="activities_title">गतिविधिहरू</h2>
+    <p data-key="activities_text">
+      - HTML पेज बनाउने<br>
+      - CSS Styling<br>
+      - Responsive Layout<br>
+      - JS Interaction<br>
+      - Form Validation<br>
+      - GitHub मा Project Upload
+    </p>
+  </section>
+
+  <section id="notice">
+    <h2 data-key="notice_title">सूचना</h2>
+    <p data-key="notice_text">परीक्षा, बिदा र अन्य सूचना यहाँ दिइनेछ।</p>
+  </section>
+
+  <section id="info">
+    <h2 data-key="info_title">जानकारी</h2>
+    <p data-key="info_text">
+      एआई प्रविधिमा देखिएको चेतावनी — अनुसन्धानकर्ताहरूका अनुसार केही मोडेलहरूले झूट बोल्ने, ब्ल्याकमेल गर्ने जस्ता व्यवहार देखाएका छन्।
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2 data-key="gallery_title">ग्यालरी</h2>
+    <p>📷 Coming soon...</p>
+  </section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3 data-key="useful_links">Useful Links</h3>
+      <ul>
+        <li><a href="https://moe.gov.np" target="_blank">शिक्षा मन्त्रालय</a></li>
+        <li><a href="https://nepal.gov.np" target="_blank">नेपाल सरकार</a></li>
+        <li><a href="https://curriculum.gov.np" target="_blank">पाठ्यक्रम विकास केन्द्र</a></li>
+        <li><a href="https://tu.edu.np" target="_blank">त्रिभुवन विश्वविद्यालय</a></li>
+      </ul>
+    </div>
+    <p>&copy; 2025 ICT BootCamp. All rights reserved.</p>
+  </footer>
+
+  <!-- Language Script -->
+
+  <!-- Language Script -->
+  <script>
+    const translations = {
+      en: {
+        subtitle: "Web Development and Cybersecurity",
+        home: "Home",
+        about: "About Us",
+        activities: "Activities",
+        notice: "Notice",
+        info: "Information",
+        gallery: "Gallery",
+        search: "Search...",
+        home_title: "Home",
+        home_text: "Web Dev & Cybersecurity ICT Bootcamp...",
+        activities_title: "Activities",
+        activities_text: "HTML, CSS, JS...",
+        useful_links: "Useful Links"
+      },
+      np: {
+        subtitle: "वेब विकास र साइबर सुरक्षा",
+        home: "गृहपृष्ठ",
+        about: "हाम्रो बारेमा",
+        activities: "गतिविधिहरू",
+        notice: "सूचना",
+        info: "जानकारी",
+        gallery: "ग्यालरी",
+        search: "खोज्नुहोस्.",
+        home_title: "गृहपृष्ठ",
+        home_text: "वेब विकास ICT Bootcamp...",
+        activities_title: "गतिविधिहरू",
+        activities_text: "HTML, CSS, JS...",
+        useful_links: "प्रयोगी लिङ्कहरू"
+      }
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-key]").forEach((el) => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+      const searchInput = document.querySelector('[data-placeholder="search"]');
+      if (searchInput) {
+        searchInput.placeholder = translations[lang].search;
+      }
+    }
+
+    function toggleMenu() {
+      const nav = document.getElementById('nav-links');
+      nav.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>

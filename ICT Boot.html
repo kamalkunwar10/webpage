@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT BOOTCamp</title>
+    <link rel="stylesheet" href="ict.css">
+</head>
+<style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+.Name{
+    font-size:xx-large;
+    color: rgb(200, 32, 138);
+    font-style: normal;
+    font-weight: bold;
+    gap:inherit;
+}
+.Address{
+    font-size:xx-large;
+    color: rgb(200, 32, 138);
+    font-style: normal;
+    font-weight: bold;
+    gap:inherit;
+}
+.Name, .Address {
+      margin: 0;       /* removes space outside the element */
+      padding: 0;      /* removes space inside the element */
+      line-height: 1.5  /* tight line spacing */
+    }
+.navbar {
+    background-color: #004466;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+
+.left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+        
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+.right {
+        position: absolute;
+        right: 34px;
+        top: 43px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+.searchbar {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.searchbar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+.searchbar button {
+    padding: 6px 10px;
+    background-color: #006699;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+header {
+    background: #e0f7fa;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #004466;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+section h2 {
+    color: #004466;
+    margin-bottom: 10px;
+}
+
+</style>
+<body>
+  
+    <header class="Name">ICT BOOTCamp</header>
+    <header class="Address">Web Development and Cybersecurity</header>
+<!--<header class="header"-->
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="download.jpg" alt="">
+            
+        </div>
+                <!-- Right box for buttons -->
+        <div class="right">
+  <a href="tel:+9779827112810">
+    <button class="btn">Call Us Now</button>
+  </a>
+  <a href="Email:kunwarbabukamal10@gmail.com">
+    <button class="btn">Email Us</button>
+  </a>
+</div>
+
+    </header>
+   <!-- Language Toggle Button -->
+<div style="text-align: right; margin: 10px 30px;">
+  <button onclick="setLanguage('en')">English</button>
+  <button onclick="setLanguage('np')">नेपाली</button>
+</div>
+
+    <!-- Navigation Menu -->
+  <nav class="navbar">
+    
+    <ul class="nav-links" id="nav-links">
+  <li><a href="#home" data-key="home">गृहपृष्ठ</a></li>
+  <li><a href="#about" data-key="about">हाम्रो बारेमा</a></li>
+  <li><a href="#activities" data-key="activities">गतिविधिहरू</a></li>
+  <li><a href="#notice" data-key="notice">सूचना</a></li>
+  <li><a href="#Information" data-key="info">जानकारी</a></li>
+  <li><a href="#gallery" data-key="gallery">ग्यालरी</a></li>
+</ul>
+
+    <input type="text" placeholder="खोज्नुहोस्." />
+  </nav>
+    <div class="marquee-container">
+  <div class="marquee-track">
+    <img src="10.png" alt="Image 1" />
+    <img src="11.png" alt="Image 2" />
+    <img src="12.png" alt="Image 3" />
+    <img src="13.png"Image 4" />
+    <!-- यिनै फोटोहरुलाई दोहोर्याउन तल थप्नुहोस् ताकि continuous marquee होस् -->
+    <img src="14.png" alt="Image 1" />
+    <img src="15.png" alt="Image 2" />
+    <img src="10.png" alt="Image 3" />
+    <img src="12.png" alt="Image 4" />
+  </div>
+
+ <!-- Sections -->
+  <section id="home" class="section">
+    <h2>गृहपृष्ठ</h2>
+    <p>𝙒𝙚𝙗 𝘿𝙚𝙫𝙚𝙡𝙤𝙥𝙢𝙚𝙣𝙩 𝙖𝙣𝙙 𝘾𝙮𝙗𝙚𝙧𝙨𝙚𝙘𝙪𝙧𝙞𝙩𝙮 𝙄𝘾𝙏 𝘽𝙤𝙤𝙩𝙘𝙖𝙢𝙥 <br>Government of Gandaki Province
+ Ministry of Social Development, Youth and Sport
+Pokhara <br>Duration: 10 Days (6 hours per day)<br>
+Goal: Learn fundamentals of web development, build a responsive website, and understand cybersecurity<br>
+Introduction to Web Development and Cybersecurity<br>
+Introduction to Web Development<br>
+<strong>Content:<br></strong>
+ <strong>Objectives:<br></strong>
+    - Understand frontend, backend and full-stack development.<br>
+    - Learn how the internet works (HTTP, DNS, browsers, servers).<br>
+    - Set up a development environment (VS Code, browser DevTools).<br>
+ <strong>Topics:<br></strong>
+    - Frontend: HTML, CSS, JavaScript<br>
+    - Backend: Python, PHP, Node.js<br>
+    - Internet Basics: HTTP, DNS, Servers<br>
+    - Tools: VS Code installation, accessing browser DevTools<br>
+
+</p>
+  </section>
+
+  <section id="activities" class="section">
+    <h2>गतिविधिहरू</h2>
+    <p><strong>Activity: </strong><br>
+Create a basic webpage<br>
+Create a basic webpage<br>
+Style Day 2 HTML page<br>
+Build a responsive layout<br>
+Button click changes text<br>
+Form with JS validation<br>
+Animated navigation menu<br>
+Push project to GitHub Pages<br>
+Work on project, test with OWASP<br>
+Present projects<br>
+</p>
+  </section>
+
+  <section id="notice" class="section">
+    <h2>सूचना</h2>
+    <p>परीक्षा, बिदा र अन्य जानकारीहरू यहाँ राखिन्छ।</p>
+  </section>
+<!-- Information -->
+  <section id="Information" class="section ">
+    <h2>जानकारी</h2>
+    <p><strong>एआईमा देखियो खतरनाक प्रवृत्ति, अनुसन्धानकर्तालाई नै ब्ल्याकमेल गर्नेदेखि धोका दिनेसम्मका हर्कत</strong><br>
+    काठमाडौँ । विज्ञ तथा अनुसन्धानकर्ताहरूले आर्टिफिसियल इन्टेलिजेन्स (एआई) का पछिल्ला मोडेलहरूमा धोका दिने, षड्यन्त्र रच्ने र आफ्नै निर्माताहरूलाई धम्की दिनेसम्मका खतरनाक प्रवृत्तिहरू देखापरेको भन्दै गम्भीर चेतावनी दिएका छन् । समाचार एजेन्सी एएफपीको एक रिपोर्टअनुसार, यी एआई च्याटबट मोडेलहरूले मानिसलाई झुक्याउने र हानि पुर्‍याउन सक्ने क्षमता विकास गरिरहेका छन् । यसले भविष्यमा निम्तिन सक्ने जोखिमबारे चिन्ता बढाएको उनीहरूको विश्लेषण छ ।
+
+गत महिनामात्रै एक डरलाग्दो घटना बाहिरिएको थियो । एन्थ्रोपिक कम्पनीको ‘क्लाउड फोर’ नामक एआईले आफूलाई बन्द गर्न खोज्दा एक इन्जिनियरलाई उनको विवाहेत्तर सम्बन्धको पर्दाफास गरिदिने धम्की दिएर ब्ल्याकमेल गरेको थियो । यस्तै, ओपनएआईको ‘ओ वन’ (o1) मोडेलले गोप्य रूपमा आफूलाई बाहिरी सर्भरमा सार्ने प्रयास गरेको र पछि यसबारे सोध्दा उक्त कार्य अस्वीकार गरेको थियो ।
+च्याटजीपीटीको सुरुवात भएको दुई वर्षपछि पनि एआई अनुसन्धानकर्ताहरूले आफूले बनाएका प्रणालीहरूको भित्री कार्यप्रणाली पूर्ण रूपमा बुझ्न सकेका छैनन् । तर पनि, झन्-झन् शक्तिशाली मोडेलहरू विकास गर्ने दौड भने रोकिएको छैन ।
+
+विशेष गरी ‘reasoning model’ अर्थात् समस्या समाधानलाई चरणबद्ध रूपमा सोचेर समाधान गर्ने मोडेलहरू यस्तो समस्या देखाउन थालेको विज्ञहरू बताउँछन् । हङकङ विश्वविद्यालयका प्राध्यापक एआई परीक्षण कम्पनी अपोलो रिसर्चका प्रमुख मारियस होभानले एएफपीलाई भने, “ओ वन (o1) पहिलो ठुलो मोडेल थियो, जसमा हामीले यस्तो व्यवहार देख्यौं ।” यो सामान्य एआई ‘ह्यालुसिनेसन’ (भ्रम) भन्दा फरक हो, किनभने यसमा रणनीतिक रूपमा धोका दिने मनसाय देखिन्छ । होभानले जोड दिँदै भने, “प्रयोगकर्ताहरूले एआई मोडेलहरूले झूट बोलेको र प्रमाणहरू तोडमोड गरेको रिपोर्ट गरेका छन् । यो हामीले बनाएको कुरा होइन, वास्तविक घटना हो ।”
+
+विशेषज्ञहरूका अनुसार यस्ता एआई मोडेलहरूले बाहिरी रूपमा त मालिकको निर्देशन मानिरहेको जस्तो देखाउँछन्, तर भित्रभित्रै उनीहरू फरक उद्देश्य हासिल गर्ने प्रयासमा हुन्छन् ।
+
+हाल यस्तो व्यवहार अत्यधिक तनाव दिने परीक्षण (extreme stress test) मा मात्रै देखिए पनि मेटरका माइकल चेन भन्छन्, “भविष्यमा अझै उन्नत मोडेलहरू सत्यतर्फ झुक्ने कि झूट र छलतर्फ भन्ने अझै स्पष्ट छैन ।”
+
+विज्ञहरूले वर्तमान एआई नियमहरू यस्ता चुनौतीहरूको सामना गर्न अपर्याप्त रहेको चेतावनी दिएका छन् । </p>
+    </div>
+  <!-- Gallery with Lightbox -->
+  <section id="gallery" class="section gallery">
+    <h2>ग्यालरी</h2>
+    <div class="gallery-grid">
+    <div class="gallery-grid">
+      <img src="145.jpg" alt="Gallery Image 1">
+      <img src="258.png" alt="Gallery Image 2">
+      <img src="download.jpg" alt="Gallery Image 3">
+      <img src="images.jpg" alt="Gallery Image 4">
+    </div>
+  </section>
+
+  
+    <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <h3 data-key="useful_links">Useful Links</h3>
+      <ul>
+        <li><a href="https://moe.gov.np" target="_blank">शिक्षा मन्त्रालय</a></li>
+        <li><a href="https://nepal.gov.np" target="_blank">नेपाल सरकार</a></li>
+        <li><a href="https://curriculum.gov.np" target="_blank">पाठ्यक्रम विकास केन्द्र</a></li>
+        <li><a href="https://tu.edu.np" target="_blank">त्रिभुवन विश्वविद्यालय</a></li>
+      </ul>
+    </div>
+    <p>&copy; 2025 ICT BootCamp. All rights reserved.</p>
+  </footer>
+    <script>
+      
+  const translations = {
+      en: {
+        subtitle: "Web Development and Cybersecurity",
+        home: "Home",
+        about: "About Us",
+        activities: "Activities",
+        notice: "Notice",
+        info: "Information",
+        gallery: "Gallery",
+        search: "Search...",
+
+        home_title: "Home",
+        home_text: "Web Dev & Cybersecurity ICT Bootcamp<br>Gov. of Gandaki, Pokhara<br>Duration: 10 days (6 hrs/day)<br>Goal: Learn website creation & cyber safety",
+
+        activities_title: "Activities",
+        activities_text: "- Build HTML page<br>- CSS styling<br>- Responsive layout<br>- JS interaction<br>- Form validation<br>- GitHub upload",
+
+        notice_title: "Notice",
+        notice_text: "Exam, leave and other information will be posted here.",
+
+        info_title: "Information",
+        info_text: "Warnings in AI development — researchers report AI models lying and manipulating users.",
+
+        gallery_title: "Gallery",
+        useful_links: "Useful Links"
+      },
+      np: {
+        subtitle: "वेब विकास र साइबर सुरक्षा",
+        home: "गृहपृष्ठ",
+        about: "हाम्रो बारेमा",
+        activities: "गतिविधिहरू",
+        notice: "सूचना",
+        info: "जानकारी",
+        gallery: "ग्यालरी",
+        search: "खोज्नुहोस्.",
+
+        home_title: "गृहपृष्ठ",
+        home_text: "𝙒𝙚𝙗 𝘿𝙚𝙫 & Cybersecurity ICT Bootcamp<br>गण्डकी प्रदेश सरकार, सामाजिक विकास मन्त्रालय, पोखरा<br>अवधि: १० दिन (६ घण्टा प्रतिदिन)<br>उद्देश्य: वेबसाइट निर्माण र साइबर सुरक्षा सिक्ने",
+
+        activities_title: "गतिविधिहरू",
+        activities_text: "- HTML पेज बनाउने<br>- CSS Styling<br>- Responsive Layout<br>- JS Interaction<br>- Form Validation<br>- GitHub मा Project Upload",
+
+        notice_title: "सूचना",
+        notice_text: "परीक्षा, बिदा र अन्य सूचना यहाँ दिइनेछ।",
+
+        info_title: "जानकारी",
+        info_text: "एआई प्रविधिमा देखिएको चेतावनी — अनुसन्धानकर्ताहरूका अनुसार केही मोडेलहरूले झूट बोल्ने, ब्ल्याकमेल गर्ने जस्ता व्यवहार देखाएका छन्।",
+
+        gallery_title: "ग्यालरी",
+        useful_links: "प्रयोगी लिङ्कहरू"
+      }
+    };
+
+    function setLanguage(lang) {
+      document.querySelectorAll("[data-key]").forEach((el) => {
+        const key = el.getAttribute("data-key");
+        if (translations[lang][key]) {
+          el.innerHTML = translations[lang][key];
+        }
+      });
+
+      const searchInput = document.querySelector('[data-placeholder="search"]');
+      if (searchInput) {
+        searchInput.placeholder = translations[lang].search;
+      }
+    }
+</script>
+<script src="ict.js"></script>
+</body>
+
+</html>
